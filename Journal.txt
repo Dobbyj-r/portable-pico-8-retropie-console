@@ -56,11 +56,13 @@ In testing it after installing the basic retropie os from the rasperry pi imager
 https://www.raspberrypi.com/software/
 It all was fine each of the buttons worked and gave out the correct directtion considering that I've had to change the orientation of joystick to make it fit nicely.
 
+
 (Image in Jan 3rd)
 
 4th Jan
 My soldering iron arived when I was asleep so now I can make this look pretty. Well prettier. 
 
+I've also noticed one more thing I forgot on my design. That being the jumper cable hight addition. So it currently doesn't sit flat but that will fixed in the next stl version.
 (Image and vid in 4th jan)
 
 6th Jan 
@@ -75,6 +77,8 @@ break for a bit. I need to think about why this is happening and ask around a bi
 Add start add select buttons as the only way to fully use the system right now is with a usb controller
 get some bluetooth speakers to connect or someway to add audio at a veriable volume
 Maybe add more of the big buttons to play "newer games"
+
+I'll also need to edit the stl to help with the next build.
 
 7th Jan
 
