@@ -86,4 +86,14 @@ As I've done this I might as well redo the soldering for the other buttons and m
 And now to put all the cables back on.... actually, while everything is disconnected, I'm going to spawn out the pi z 1 to the pi z 2. Granted that does mean that I will need to take the roms I've put on to the SD off of it and re-load a new os as retropie works differently on different r pi’s due to the core count of them.
 Remember once again to put the ssh file and wpa_supplicant.conf file in.
 
+One thing I've just ran into is that the rpi z2 dosen't have it's own image for retropie. Because of this it has to use the pi3 image. However, the standered image for pi3 doesn't have the updated drivers for the rpi z2 bluetooth and wifi module. So where does this leave up. Well, we have to turn to the the weekly releases. 
+
+!!Now these releases are unsupported and untested so use at your own risk.!!
+
 This time when setting up the gpio input we need to go for 4 buttons and a joystick. A, b, start, select and the joystick.
+
+Well, it all works. At least as good as last time but now I have my start and select buttons.
+
+I also re-did pico-8 and I'm getting an error message future version: 33. So I just need to updata it...hopefully.
+
+(Images and vid in 9th Jan)
