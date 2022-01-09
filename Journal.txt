@@ -96,4 +96,6 @@ Well, it all works. At least as good as last time but now I have my start and se
 
 I also re-did pico-8 and I'm getting an error message future version: 33. So I just need to updata it...hopefully.
 
+Last thing for today but I finally found the volume controller and you'd never guess where it's under.....audio. I know who would've guessed but oh well better late then never.
+
 (Images and vid in 9th Jan)
