@@ -26,6 +26,8 @@ Looking at it, the pi has an internal pull up resistor on each of the pins. Beca
 
 We now have to address a liberty I've taken, rotating the joystick. Though this isn't much of a problem I'll still talk about what I've done for it. As opposed to how it would normally (or intendedly) be oriented I've rotated it 90 degrees to the right. Because of this the pin connections now look like this:
 
+(as documented in the adafruit guide)
+
 Joystick UP: GPIO25
 Joystick DOWN: GPIO09
 Joystick LEFT: GPIO17
@@ -41,10 +43,15 @@ It all was fine each of the buttons worked and gave out the correct direction co
 
 remember that when putting building a r pi assisted device in the SD card put an empty file called ssh in it to enable ssh headerlessly. And also remember to put the wpa_supplicant.conf in there. This makes connecting to it a lot easier and you don't have to have a connect a keyboard to the pi. plus you can use an ftp service really easily to transfer roms.
 How to create a wpa_supplicant.conf file : https://www.raspberrypi-spy.co.uk/2017/04/manually-setting-up-pi-wifi-using-wpa_supplicant-conf/
+
 (Image in Jan 3rd)
 
 4th Jan
 My soldering iron arrived when I was asleep so now I can make this look pretty. Well prettier. 
+
+As my joystick has nothing actally holding it up, it keeps falling down to touch the surface the body is on. This stops it from woking properly. Becasue of this I'm going to print out a cover of sorts for it.
+
+It looks like, while the print worked it dosn't exactly sit flush to the back of the console body... I may have also snapped a couple of the legs that were going to hold it up off of the back plate sooo..yeah. Well lets just take all of them off add the cables to the pins (as I might lose access to them) then put the joystick in, glue the pillers down and viola. Its all secured and like I thought I cant get to the top most pin easily so glade I did that. 
 
 I've also noticed one more thing I forgot on my design. That being the jumper cable hight addition. So it currently doesn't sit flat but that will fix in the next stl version.
 (Image and vid in 4th Jan)
@@ -74,7 +81,7 @@ Roughly 9*9*14mm.
 
 How I've connected the button will be in an image for the day. 
 
-Now to thread the cables to the pi it needs to go through to the back of the console. 
+Now to thread the cables to the pi it needs to go through to the back of the console. (Eventually I'll make a new stl that has these extra bits on it.)
 As I've done this I might as well redo the soldering for the other buttons and make it a bit neater.
 And now to put all the cables back on.... actually, while everything is disconnected, I'm going to spawn out the pi z 1 to the pi z 2. Granted that does mean that I will need to take the roms I've put on to the SD off of it and re-load a new os as retropie works differently on different r pi’s due to the core count of them.
 Remember once again to put the ssh file and wpa_supplicant.conf file in.
