@@ -1,47 +1,30 @@
-Today is the 28th of December 2020 and for my christmas break I've thought about takeing one of the projects that I'm doing in college and turning it into a physical build.
-What I mean is that for my college course we are building 8-bit games using pico-8. Becasue of this I thought it would be really cool if we could play these on a physical arcade
-style thing or something. So first this I've done is to see if opne exists and if I can buy it..... 
+Today is the 28th of December 2020 and for my Christmas break I've thought about taking one of the projects that I'm doing in college and turning it into a physical build. What I mean is that for my college course we are building 8-bit games using pico-8. Because of this I thought it would be really cool if we could play these on a physical arcade style thing or something. So first this I've done is to see if one exists and if I can buy it..... 
 https://shop.pimoroni.com/products/picade?variant=29210087489619     ----Picade £225
-.... Well that's too expencive, time to make my own. I've already ordered some of the parts I need like a joystick and buttons(links in parts and cost list.txt) and they should 
-be here in a couple of days so Time to get to work building this thing.
+.... Well that's too expensive, time to make my own. I've already ordered some of the parts I need like a joystick and buttons (links in parts and cost list.txt) and they should be here in a couple of days so Time to get to work building this thing.
 
-So I've done a bit of thinking and I could just get the raspberry pi version of pico-8 and the raspberry pi os and put them on the pi to launch at boot and that the problem solved all 
-I need to do after that is make a "breadboard pc" and plug in the buttons and the joy stick and map each of the inputs to a keyboard button.
+So I've done a bit of thinking and I could just get the raspberry pi version of pico-8 and the raspberry pi os and put them on the pi to launch at boot and that the problem solved all I need to do after that is make a "breadboard pc" and plug in the buttons and the joystick and map each of the inputs to a keyboard button.
 
 
-Today is 29th of December and I've been thinking about this for a bit as well as doing some more research and others have had a similare idea but that they just want to play pico-8
-games on the raspberry pi. However, their approtch was to use retropie. Retropie is an os that has lots of (as the name implise) retro game emulators onit. Becasue of this the
-thought of adding pico-8 onto it is very reasonable as it's another retro esc game source. But this requires a bit of tinkering around but much less then getting pico-8 to load 
-on boot and making a breadboard/gpio keyboard (which retropie has relativly good support for). So this is the route I'm going to take. Plus it means I can use this project in more
-ways with an os that was designed to do this kind of thing rather then one where a lot of edditing will need to be done.
+Today is 29th of December and I've been thinking about this for a bit as well as doing some more research and others have had a similar idea but that they just want to play pico-8 games on the raspberry pi. However, their approach was to use retropie. Retropie is an os that has lots of (as the name implies) retro game emulators on it. Because of this the thought of adding pico-8 onto it is very reasonable as it's another retro esc game source. But this requires a bit of tinkering around but much less than getting pico-8 to load on boot and making a breadboard/gpio keyboard (which retropie has relatively good support for). So this is the route I'm going to take. Plus it means I can use this project in more ways with an os that was designed to do this kind of thing rather than one where a lot of editing will need to be done.
 
-Oh I also finished the (physical controller_V1.stl) CAD of the controller. I've got the basic shape down but once I've got the parts I can actually measure them and addjust where needed.
-The desing includes channels for the wires to go down.
+Oh I also finished the (physical controller_V1.stl) CAD of the controller. I've got the basic shape down but once I've got the parts I can actually measure them and adjust where needed. The design includes channels for the wires to go down.
 
-It's the 30th of December and the parts are finally here. Took the mesuremesurements and, well, I need to change a few sizes(Already done in the physical controller_V1.stl) but the overall
-shape will still hold.
+It's the 30th of December and the parts are finally here. Took the measurements and, well, I need to change a few sizes (Already done in the physical controller_V1.stl) but the overall shape will still hold.
 
-And now to slice and print.....and this will take 14 hours so see you tommorow.
+And now to slice and print.....and this will take 14 hours so see you tomorrow.
 
-It's the 31st now and the print is done. Put the parts in to see if they fit and looking at it the buttons do but I've got to dremel out large parts of the underside to get the 
-joystick to fit. It also looks like I didn't account for the sd card for thr r pi z but the dremal will help with that.
+It's the 31st now and the print is done. Put the parts in to see if they fit and looking at it the buttons do but I've got to dremel out large parts of the underside to get the joystick to fit. It also looks like I didn't account for the SD card for the r pi z but the dremel will help with that.
 
 (Images in Dec 31st folder)
 
 
-I took a couple days off it's now the 3rd. Now, recently I, lets set, lost my soldering iron...so I've ordered a new one. But for now I can bread board it. I've been reading 
-the adafruit tutoriel on how to set up a gpio controller with retropie: 
+I took a couple days off it's now the 3rd. Now, recently I, let’s set, lost my soldering iron...so I've ordered a new one. But for now I can bread board it. I've been reading the adafruit tutorial on how to set up a gpio controller with retropie: 
 https://learn.adafruit.com/retro-gaming-with-raspberry-pi/adding-controls-hardware
-It's actually taken me the almost the whole way. Even with just breadboarding it (the buttons just have jumper cables wedged in the form a connection).
-The only thing I had to look up is how to connect the buttons. Now I've used buttons connected to pi gpio pins and micro:bit breakout's. But these button are 2 pin and the ones i've used
-where 4 pins. So I've had to do a bit of research on that. 
+It's actually taken me the almost the whole way. Even with just breadboarding it (the buttons just have jumper cables wedged in the form a connection). The only thing I had to look up is how to connect the buttons. Now I've used buttons connected to pi gpio pins and micro: bit breakouts. But these buttons are 2 pin and the ones I’ve used were 4 pins in a pull-down configuration. So I've had to do a bit of research on that. 
 
-Looking at it, the pi has an internal pull up resistor on each of the pins. Because of this you can conenct a 2 pin button input to a signal pin and a ground pin and avoid
-connecting a power input to it which is the main difference to the 4 pin buttons. As it's a pull up resistor the default signal (when there is a compleate circut) is high. 
-However when the button presses and connect it "breaks" the signal and makes the value low. 
+Looking at it, the pi has an internal pull up resistor on each of the pins. Because of this you can connect a 2-pin button input to a signal pin and a ground pin and avoid connecting a power input to it which is the main difference to the 4 pin buttons. As it's a pull up resistor the default signal (when there is a complete circuit) is high.  However when the button presses and connect it "breaks" the signal and makes the value low. 
 
-We now have to address a liberty I've taken, rotating the joystick. Though this isn't much of a problem I'll still talk about what I've done for it. As opposed to how it would
-normally(or intendedly) be oriented I've rotated it 90 degrees to the right. Because of this the pin connections now look like this:
+We now have to address a liberty I've taken, rotating the joystick. Though this isn't much of a problem I'll still talk about what I've done for it. As opposed to how it would normally (or intendedly) be oriented I've rotated it 90 degrees to the right. Because of this the pin connections now look like this:
 
 Joystick UP: GPIO25
 Joystick DOWN: GPIO09
@@ -52,30 +35,30 @@ Button B (one contact): GPIO 7
 
 Plus 3 ground connection (1 joystick and 2 buttons)
 
-In testing it after installing the basic retropie os from the rasperry pi imager 
+In testing it after installing the basic retropie os from the raspberry pi imager 
 https://www.raspberrypi.com/software/
-It all was fine each of the buttons worked and gave out the correct directtion considering that I've had to change the orientation of joystick to make it fit nicely.
+It all was fine each of the buttons worked and gave out the correct direction considering that I've had to change the orientation of joystick to make it fit nicely.
 
-
+remember that when putting building a r pi assisted device in the SD card put an empty file called ssh in it to enable ssh headerlessly. And also remember to put the wpa_supplicant.conf in there. This makes connecting to it a lot easier and you don't have to have a connect a keyboard to the pi. plus you can use an ftp service really easily to transfer roms.
+How to create a wpa_supplicant.conf file : https://www.raspberrypi-spy.co.uk/2017/04/manually-setting-up-pi-wifi-using-wpa_supplicant-conf/
 (Image in Jan 3rd)
 
 4th Jan
-My soldering iron arived when I was asleep so now I can make this look pretty. Well prettier. 
+My soldering iron arrived when I was asleep so now I can make this look pretty. Well prettier. 
 
-I've also noticed one more thing I forgot on my design. That being the jumper cable hight addition. So it currently doesn't sit flat but that will fixed in the next stl version.
-(Image and vid in 4th jan)
+I've also noticed one more thing I forgot on my design. That being the jumper cable hight addition. So it currently doesn't sit flat but that will fix in the next stl version.
+(Image and vid in 4th Jan)
 
 6th Jan 
 Decided to get the Pico-8 part of this project fully working and to do that I've followed this guide:
 https://www.reddit.com/r/RetroPie/comments/lurmu0/pico8_in_retropie_easy_uptodate_tutorial_with/
 
-and now it seems to be working, but only with certain carts. For instance celest will work but my carts wont. For now I'm happy enough with this little retro console of mine but will take a 
-break for a bit. I need to think about why this is happening and ask around a bit to see if anyone else can help. If not I might just have to try fresh installs.
+and now it seems to be working, but only with certain carts. For instance celeste will work but my carts wont. For now I'm happy enough with this little retro console of mine but will take a break for a bit. I need to think about why this is happening and ask around a bit to see if anyone else can help. If not, I might just have to try fresh installs.
 
 6th Jan-To do list
 
-Add start add select buttons as the only way to fully use the system right now is with a usb controller
-get some bluetooth speakers to connect or someway to add audio at a veriable volume
+Add start add select buttons as the only way to fully use the system right now is with a usb controller 
+get some Bluetooth speakers to connect or someway to add audio at a variable volume
 Maybe add more of the big buttons to play "newer games"
 
 I'll also need to edit the stl to help with the next build.
@@ -84,4 +67,16 @@ I'll also need to edit the stl to help with the next build.
 
 Guess I should write this up to git hub 
 
+9th Jan
 
+So I got around to wanting to add the start and select buttons on to the controller console. To do this I've got these little 6 pin LED buttons. Around 10mm in width and length. I carved holes for them to go into but, because if the low print density I set my slicer to, the infill just crumbled. Because of this I've had to print little cubes to go into the hole where I’ve carved out. 
+Roughly 9*9*14mm.
+
+How I've connected the button will be in an image for the day. 
+
+Now to thread the cables to the pi it needs to go through to the back of the console. 
+As I've done this I might as well redo the soldering for the other buttons and make it a bit neater.
+And now to put all the cables back on.... actually, while everything is disconnected, I'm going to spawn out the pi z 1 to the pi z 2. Granted that does mean that I will need to take the roms I've put on to the SD off of it and re-load a new os as retropie works differently on different r pi’s due to the core count of them.
+Remember once again to put the ssh file and wpa_supplicant.conf file in.
+
+This time when setting up the gpio input we need to go for 4 buttons and a joystick. A, b, start, select and the joystick.
