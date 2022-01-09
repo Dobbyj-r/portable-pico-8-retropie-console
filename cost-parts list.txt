@@ -1,0 +1,29 @@
+What I used for my design (lots of these can be substituted for other things or expanded upon/upgraded)
+
+
+any pi board (r pi z 2: £19.40)-https://robosavvy.co.uk/raspberry-pi-zero-2-w.html
+
+1 * joystick (£13): https://thepihut.com/products/small-arcade-joystick
+
+2 * big arcade buttons 2 pin (2* 2.25): https://thepihut.com/products/official-sanwa-arcade-button?variant=31934152540222
+
+2 * 6 pin 10mm push buttons (£7): https://www.amazon.co.uk/WMYCONGCONG-Momentary-Tactile-Button-Switch/dp/B07KPSZ731
+
+1 * 32gb SD card (£7): https://www.amazon.co.uk/gp/product/B07FCCTX45/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&th=1
+
+solid wire (might want different colours for ground and signal) (£2.60): https://thepihut.com/products/solid-core-wire-spool-25ft-22awg-black
+
+jumper cables of different lengths (£???)
+
+mini hdmi to hdmi adapter-should be included with pi (£2.59): https://www.amazon.co.uk/Mini-HDMI-Adapter-Connector-Converter/dp/B08P8CJH3X/ref=asc_df_B08P8CJH3X/
+
+hdmi cable(£2 ish)
+
+power cable for the pi-(£1 ish)
+
+filament used for initial design(£27 per real-total print weight~190g=~£4): https://www.amazon.co.uk/dp/B07ZRK5FN7/ref=twister_B08DHK5FC2
+DON'T GET THIS FILAMENT- it's just what I had laying around and I wouldn't recommend it for something like this as its flow/density causes inconsistencies in the print
+
+
+TOTAL: £58.1-£70 dependent on if cables are already available or the quantity that needs/wants to be bought for diversity when soldering. 
+Remember that this is only the parts that I used. I'm sure there are cheaper alternatives to use out there.
