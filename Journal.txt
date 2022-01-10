@@ -99,3 +99,12 @@ I also re-did pico-8 and I'm getting an error message future version: 33. So I j
 Last thing for today but I finally found the volume controller and you'd never guess where it's under.....audio. I know who would've guessed but oh well better late then never.
 
 (Images and vid in 9th Jan)
+
+10th Jan
+
+Tried adding a screen to the console but as I was doing thought against it as it kinda ruins my gpio setup...pluss it's a pain to setup
+
+Did a bit of re-pinning to be a bit neater.
+
+In the comming days I'll cad up a base plate for this an maybe a second one entirely to avoid the need for a base plate
+
